@@ -154,7 +154,7 @@ CLASS ZCL_GUI_NIC_EDITOR IMPLEMENTATION.
           iv_side    = 'WIDTH'
         ).
       ENDIF.
-      mv_editor_width -= 10.
+      mv_editor_width = mv_editor_width - 10.
     ENDIF.
 
     IF mv_editor_height IS INITIAL.
@@ -168,7 +168,7 @@ CLASS ZCL_GUI_NIC_EDITOR IMPLEMENTATION.
           iv_side    = 'HEIGHT'
         ).
       ENDIF.
-      mv_editor_height -= 60.
+      mv_editor_height = mv_editor_height - 60.
     ENDIF.
 
     DATA(lv_html) = mv_editor_source_template.
